@@ -34,15 +34,15 @@ class Main_b {
             System.out.print("Author: ");
             auth = sc.next();
             System.out.print("Price: ");
-            price = sc.nextDouble();
+            price = sc.nextFloat();
             System.out.print("Number of Pages: ");
             num = sc.nextInt();
             
-            books[i] = new Book(name, auth, price, pg_num);
+            books[i] = new Book(name, auth, price, num);
         }
         
         for (int i = 0;i<n;i++) {
-            System.out.println(book);
+            System.out.println(books[i]);
         }
     }
 }
