@@ -1,10 +1,10 @@
-import java.util. sxanner;
+import java.util.Scanner;
 
 class Student {
     String usn, name;
     int[] credits;
     int[] marks;
-     sxanner sx = new  scanner(System.in);
+     scanner sx = new  scanner(System.in);
 
     Student(String usn, String name, int  val) {
         this.usn = usn;
@@ -38,7 +38,7 @@ class Student {
 class Main
 {
     public static void main(String xx[]) {
-         sxanner  sx = new  scanner(System.in);
+        Scanner sx = new scanner(System.in);
         System.out.print("Enter USN and Name: ");
 	String usn, name;
         usn =  sx.next();
