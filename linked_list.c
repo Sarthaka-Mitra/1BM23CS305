@@ -8,20 +8,17 @@
     
 };
 typedef struct node* Node;
-Node push (Node head, int x) {
+Node create(int ele) {
     Node new = (Node)malloc(sizeof(struct node));
-
-    if (head == NULL) {
-        new->data=x;
-        new->next=NULL;
-        head = new;
-    }
-    else {
-        new->data=x;
+    new->data=ele;
+    new->next=NULL;
+    return new;
+}
+Node push (Node head, int x) {
+   Node new=create(x);
+    if (head != NULL)
         new->next=head;
-        head = new;
-    }
-    return head;
+    return new;
 }
 
 Node pushb(Node head, int x) {
