@@ -1,7 +1,7 @@
 class Lab_Thread implements Runnable {
 	Thread t;
 	String name;
-	Lab(String th){
+	Lab_Thread(String th){
 		name = th;
 		t = new Thread(this, th);
 		System.out.println("Child thread: " + t);	
@@ -11,7 +11,7 @@ class Lab_Thread implements Runnable {
 		try {
 			for(int i = 5; i > 0; i--){
 				switch(name){
-					case "BMS":
+					case "BMS College of Engineering":
 						System.out.println(name);
 						Thread.sleep(10000);
 						break;
@@ -32,8 +32,8 @@ class Lab_Thread implements Runnable {
 	}
 
 	public static void main(String arg[]){
-		Lab a1 = new Lab("BMS");
-		Lab a2 = new Lab("CSE");
+		Lab_Thread a1 = new Lab_Thread("BMS");
+		Lab_Thread a2 = new Lab_Thread("CSE");
 		
 		a1.t.start();
 		a2.t.start();
