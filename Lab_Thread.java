@@ -36,18 +36,7 @@ class Lab_Thread implements Runnable {
 		Lab_Thread a2 = new Lab_Thread("CSE");
 		
 		a1.t.start();
-		a2.t.start();
-		
-		try{
-			for(int i = 5; i > 0; i--){
-				Thread.sleep(10000);
-			}
-			
-		}
-		catch(InterruptedException ie)
-			{System.out.println("Main thread interrupted");}
-
-		System.out.println("Child threads exiting");	
+		a2.t.start();	
 	}
 }
 
