@@ -32,7 +32,7 @@ class Lab_Thread implements Runnable {
 	}
 
 	public static void main(String arg[]){
-		Lab_Thread a1 = new Lab_Thread("BMS");
+		Lab_Thread a1 = new Lab_Thread("BMS College of Engineering");
 		Lab_Thread a2 = new Lab_Thread("CSE");
 		
 		a1.t.start();
