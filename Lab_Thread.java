@@ -1,4 +1,4 @@
-class Lab implements Runnable {
+class Lab_Thread implements Runnable {
 	Thread t;
 	String name;
 	Lab(String th){
