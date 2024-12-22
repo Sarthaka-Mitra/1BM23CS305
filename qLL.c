@@ -63,8 +63,8 @@ int main(){
     struct label head;
     head.front = head.rear = NULL;
     int elem, choice, flag=1;
+    printf("\nChoose the operation from the given menu:");
     while(flag){
-        printf("\nChoose the operation from the given menu:");
         printf("\n1. Enqueue\n2. Dequeue\n3. Display\n4. Exit");
         printf("\nEnter the choice:\t");
         scanf("%d", &choice);
