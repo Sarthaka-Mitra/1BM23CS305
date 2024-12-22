@@ -47,8 +47,8 @@ void disp(Node head) {
 
 
 int main(){
-    int choice, elem, key,flag=1;
-    Node head=NULL, h2 = NULL;
+    int choice, elem, flag=1;
+    Node head=NULL;
     printf("Enter your choice:\n");
     while(flag){
         printf("\n1.Push\n2.Display\n3.Pop\n4.Exit\n");
