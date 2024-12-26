@@ -45,16 +45,38 @@ void inorder(Node root){
     }
 }
 
+void postorder(Node root){
+    if(root!=NULL){
+        postorder(root->L);
+        postorder(root->R);
+        printf("%d\t", root->val);
+    }
+}
+
+void preorder(Node root){
+    if(root!=NULL){
+        printf("%d\t", root->val);
+        preorder(root->L);
+        preorder(root->R);
+    }
+}
+
+
+
+
 void main(){
     Node root = NULL;
     int x;
-    root = insert(root, 500);
+    root = insert(root, 50);
     for(int i = 0; i < 10; i++){
-        x=rand()%1000;
+        x=rand()%100;
         printf("%d\t",x);
         root = insert(root,x);
     }
-    printf("\n");
+    printf("\nInorder of the tree: \n");
     inorder(root);
-
+    printf("\nPreorder of the tree: \n");
+    preorder(root);
+    printf("\nPostorder of the tree: \n");
+    postorder(root);
 }
