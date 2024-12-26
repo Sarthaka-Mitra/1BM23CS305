@@ -42,7 +42,7 @@ Node insK(Node head, int x){
     printf("\nAt which element to insert:");
     scanf("%d", &elem);
     for(;temp->prev->data==elem && temp != NULL;temp=temp->prev);
-    printf("%d\n", temp->data);
+    
 
     Node new = create(x);
 
